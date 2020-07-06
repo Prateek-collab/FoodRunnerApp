@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FoodRunner</string>
+    <string name="Credential1">Enter your Username or Email</string>
+    <string name="Credential2">Enter your Password</string>
+    <string name="BtnLogin">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
