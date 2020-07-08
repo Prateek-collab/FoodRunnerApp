@@ -5,4 +5,16 @@
     <string name="BtnLogin">Login</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="sign_up">Sign Up</string>
+    <string name="footerText">Designed by Prateek</string>
+    <string name="companyName">Food Runner</string>
+    <string name="Registration">Register</string>
+    <string name="DisplayText">Hello User!</string>
+    <string name="FullName">Enter Full Name</string>
+    <string name="MobileNumber">Enter Your Mobile Number</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <string name="RegisterYourself">Register Yourself</string>
+    <string name="Register">Register</string>
+    <string name="DeliveryAddress">Delivery Address</string>
+    <string name="ForgotPasswordText">Enter your registered mobile number and email below:</string>
+    <string name="next">Next</string>
 </resources>

@@ -14,13 +14,13 @@
         android:src="@drawable/logo_food"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp" />
     <TextView
         android:id="@+id/txtTitle"
         android:layout_below="@id/imgLogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Food Runner"
+        android:text="@string/companyName"
         android:textSize="25sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -39,7 +39,7 @@
         android:layout_below="@id/imgProgress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Designed by Prateek"
+        android:text="@string/footerText"
         android:textSize="15sp"
         android:textStyle="italic"
         android:gravity="center"
