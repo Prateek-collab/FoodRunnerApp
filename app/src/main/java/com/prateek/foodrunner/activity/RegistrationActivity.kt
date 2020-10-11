@@ -1,9 +1,10 @@
-package com.prateek.foodrunner
+package com.prateek.foodrunner.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.prateek.foodrunner.R
 import kotlinx.android.synthetic.main.activity_registration.*
 
 class RegistrationActivity : AppCompatActivity() {
@@ -23,7 +24,8 @@ class RegistrationActivity : AppCompatActivity() {
             val address=etAddress.text.toString()
             val password=etPassword.text.toString()
 
-            val intent= Intent(this@RegistrationActivity,DisplayActivity::class.java)
+            val intent= Intent(this@RegistrationActivity,
+                DisplayActivity::class.java)
             startActivity(intent)
             intent.putExtra("Name",fullName)
             intent.putExtra("Email",email)
@@ -34,5 +36,10 @@ class RegistrationActivity : AppCompatActivity() {
         }
 
 
+    }
+
+    override fun onPause() {
+        super.onPause()
+        finish()
     }
 }

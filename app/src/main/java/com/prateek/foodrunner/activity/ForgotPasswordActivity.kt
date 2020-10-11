@@ -1,11 +1,11 @@
-package com.prateek.foodrunner
+package com.prateek.foodrunner.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import kotlinx.android.synthetic.main.activity_forgot_password.*
+import com.prateek.foodrunner.R
 
 class ForgotPasswordActivity : AppCompatActivity() {
 
@@ -19,7 +19,6 @@ class ForgotPasswordActivity : AppCompatActivity() {
 
         etEmail2=findViewById(R.id.etEmail2)
         etMobileNumber2=findViewById(R.id.etMobileNumber2)
-
         btnNext=findViewById(R.id.btnNext)
 
         btnNext.setOnClickListener {
@@ -28,11 +27,17 @@ class ForgotPasswordActivity : AppCompatActivity() {
 
             val mobileNumber=etMobileNumber2.text.toString()
 
-            val intent= Intent(this@ForgotPasswordActivity,Display2Activity::class.java)
+            val intent= Intent(this@ForgotPasswordActivity,
+                Display2Activity::class.java)
             startActivity(intent)
             intent.putExtra("Email",emailId)
             intent.putExtra("Number",mobileNumber)
             finish()
         }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        finish()
     }
 }

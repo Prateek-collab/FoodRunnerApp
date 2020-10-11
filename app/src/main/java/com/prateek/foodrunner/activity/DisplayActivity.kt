@@ -1,8 +1,9 @@
-package com.prateek.foodrunner
+package com.prateek.foodrunner.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.prateek.foodrunner.R
 
 class DisplayActivity : AppCompatActivity() {
 
@@ -11,17 +12,20 @@ class DisplayActivity : AppCompatActivity() {
     var MobileNumber:String?="User"
     var Address:String?="User"
     var Password:String?="Password"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_display)
 
-        FullName=intent.getStringExtra("Name")
-        Email=intent.getStringExtra("Name")
-        MobileNumber=intent.getStringExtra("Name")
-        Address=intent.getStringExtra("Name")
-        Password=intent.getStringExtra("Password")
+        var intents = intent
 
-        val result=findViewById<TextView>(R.id.txtmessage)
+        FullName=intents.getStringExtra("Name")
+        Email=intents.getStringExtra("Email")
+        MobileNumber=intents.getStringExtra("MobileNumber")
+        Address=intents.getStringExtra("Address")
+        Password=intents.getStringExtra("Password")
+
+        val result=findViewById<TextView>(R.id.txtMessage)
 
         result.text="Name:"+FullName+"\nEmail:"+Email+"\nMobile Number:"+MobileNumber+"\nAddress:"+Address+"\nPassword:"+Password
     }

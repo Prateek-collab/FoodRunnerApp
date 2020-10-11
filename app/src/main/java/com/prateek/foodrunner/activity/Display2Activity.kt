@@ -1,22 +1,20 @@
-package com.prateek.foodrunner
+package com.prateek.foodrunner.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.prateek.foodrunner.R
 
 class Display2Activity : AppCompatActivity() {
-
-    var Email:String?="User"
-    var MobileNumber:String?="User"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_display2)
 
-        Email=intent.getStringExtra("Email")
-        MobileNumber=intent.getStringExtra("Number")
+        val Email=intent.getStringExtra("Email")
+        val MobileNumber=intent.getStringExtra("Number")
 
-        val display=findViewById<TextView>(R.id.txtmessage)
+        val display=findViewById<TextView>(R.id.txtMessage2)
 
         display.text="Email:"+Email+"\nMobile Number:"+MobileNumber
     }
