@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imgProfileImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile_img"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_below="@+id/imgProfileImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:hint="@string/credentials1"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_below="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:hint="@string/credentials2"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_below="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:hint="@string/credentials3"
+        android:inputType="phone"
+        />
+    <EditText
+        android:id="@+id/txtAddress"
+        android:layout_below="@+id/txtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:hint="@string/credentials4"
+        android:inputType="text"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSave"
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/txtAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"/>
+
+</RelativeLayout>
